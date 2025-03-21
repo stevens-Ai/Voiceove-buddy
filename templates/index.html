@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VoiceOver Buddy</title>
+    <style>
+        /* Basic styling to make it look decent */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        textarea {
+            width: 300px;
+            height: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>VoiceOver Buddy</h1>
+    <p>Type your text below and get an AI voiceover!</p>
+    
+    <!-- This is the form where users type text -->
+    <form action="/generate" method="POST">
+        <textarea name="text" placeholder="Enter your script here..."></textarea>
+        <br><br>
+        <button type="submit">Generate Voiceover</button>
+    </form>
+</body>
+</html>
